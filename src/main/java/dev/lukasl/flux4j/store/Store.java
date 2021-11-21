@@ -21,7 +21,8 @@ public interface Store<S> {
     @Nullable S getState();
 
     /**
-     * Mutates the {@link Store<S>}'s state using the {@param action}.
+     * Mutates the {@link Store<S>}'s state using the {@param action}. The
+     * state should only be mutated by a {@link dev.lukasl.flux4j.dispatch.Dispatcher<S>}.
      *
      * @param action the {@link Action} to apply
      */
