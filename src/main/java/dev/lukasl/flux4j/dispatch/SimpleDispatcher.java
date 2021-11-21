@@ -12,7 +12,6 @@ import java.util.Collection;
  * @param <S> the type of the state
  */
 public class SimpleDispatcher<S> implements Dispatcher<S> {
-
     /**
      * The {@link Store<S>} to dispatch to.
      */
